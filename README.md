@@ -1,23 +1,23 @@
 # Lead Intake & Qualification System
 
-A full-stack TypeScript application built with Next.js that accepts, enriches, scores, and displays leads through an intuitive dashboard.
+A full-stack TypeScript application built with Next.js that accepts, enriches, scores, and displays leads through a user-friendly dashboard.
 
 ## 🚀 Features
 
 - **Lead Submission**: Form-based lead intake with client-side validation
 - **Data Enrichment**: Automatic enrichment via AnyMail Finder API
-- **Lead Scoring**: Intelligent scoring based on configurable rules
+- **Lead Scoring**: Scoring based on configurable rules
 - **Protected Dashboard**: View and filter leads with authentication
 - **Persistent Storage**: SQLite database with Prisma ORM
 - **Type Safety**: Full TypeScript implementation
 
-## 📋 Prerequisites
+## 📋 Pre-requisites
 
 - Node.js 18+ 
 - npm or yarn
 - AnyMail Finder API key (optional for demo)
 
-## 🛠️ Installation
+## 🛠️ Installation Guide
 
 1. **Clone the repository**
    ```bash
@@ -42,7 +42,7 @@ A full-stack TypeScript application built with Next.js that accepts, enriches, s
    # AnyMail Finder API Key (optional - system works without it)
    ANYMAIL_FINDER_API_KEY=your_api_key_here
    
-   # JWT Secret (change this!)
+   # JWT Secret (change this!!!)
    JWT_SECRET=your-super-secret-key-change-this
    
    # Dashboard credentials (customize as needed)
@@ -133,9 +133,8 @@ This implementation uses **basic authentication** suitable for:
 
 For production, consider:
 - Hashed passwords (bcrypt)
-- OAuth/SSO integration
+- OAuth integration
 - Rate limiting on login attempts
-- CSRF protection
 - Session management with refresh tokens
 
 ## 📊 Lead Scoring System
@@ -173,7 +172,7 @@ The scoring algorithm assigns points based on available data:
 
 **What I'd Improve:**
 - Make scoring rules configurable (database or config file)
-- Add weighted scoring based on business priorities
+- Add scoring based on business priorities
 - Implement A/B testing for scoring variations
 - Track conversion rates to optimize thresholds
 
